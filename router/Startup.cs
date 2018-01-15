@@ -35,11 +35,6 @@ namespace MyApp
                     new JTokenJsonBinding());
             });
 
-            app.Map("/test", builder =>
-            {
-                builder.Run(async context => await context.Response.WriteAsync("Hello World!"));
-            });
-
             host.Open();
         }
     }
